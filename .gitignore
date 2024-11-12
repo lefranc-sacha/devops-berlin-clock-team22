@@ -1,0 +1,25 @@
+# Node.js files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Logs files
+logs/
+*.log
+*.log.*
+
+# Test output files
+jasmine-report/
+
+# System files 
+.DS_Store
+Thumbs.db
+
+# VS Code settings 
+.vscode/
+
+# Environment variables
+.env
