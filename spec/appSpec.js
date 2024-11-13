@@ -30,5 +30,12 @@ describe("Berlin Clock - Simple Minutes Line , ", function() {
 
         expect(result).toEqual("YYYO");
     });
+    it("should work the same for minutes greater than 4", function () {
+        expect(main.simpleMinutesLine(5)).toEqual("OOOO"); 
+        expect(main.simpleMinutesLine(6)).toEqual("YOOO"); 
+        expect(main.simpleMinutesLine(7)).toEqual("YYOO"); 
+        expect(main.simpleMinutesLine(8)).toEqual("YYYO"); 
+        expect(main.simpleMinutesLine(9)).toEqual("YYYY"); 
+      });
 
 });
