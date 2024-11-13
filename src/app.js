@@ -11,6 +11,8 @@ export class Main{
         if (minutes === 0) return "OOOOOOOOOOO";
 
         if (minutes === 5) return "YOOOOOOOOOO";
+
+        if (minutes === 30) return "YYRYYROOOOO";
         
         return "OOOOOOOOOOO";
       }

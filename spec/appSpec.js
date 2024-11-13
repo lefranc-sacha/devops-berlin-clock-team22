@@ -61,6 +61,13 @@ describe("Five Minutes Line", function () {
 
         expect(result).toEqual("YOOOOOOOOOO");
     });
+    it("should light up four yellow and two red lamps for 30 minutes", function() {
+
+        const result = main.fiveMinutesLine(30);
+        
+        expect(result).toEqual("YYRYYROOOOO");
+      });
+
     });
 
 });
