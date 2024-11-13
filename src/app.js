@@ -37,10 +37,11 @@ export class Main{
     }
     secondsLamp(seconds) {
 
-        if(seconds === 1 || seconds === 3) return "O";
+        return seconds % 2 === 0 ? "Y" : "O";
         
-        return "Y"; 
-      }
+    }
+
+    
      
     
       
