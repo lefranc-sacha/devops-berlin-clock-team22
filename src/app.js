@@ -23,9 +23,15 @@ export class Main{
     simpleHoursLine(hours) {
 
         const onLamps = hours % 5;
-        
+
         return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
 
+    }
+
+    fiveHoursLine(hours) {
+
+        return "OOOO";
+        
     }
       
 }

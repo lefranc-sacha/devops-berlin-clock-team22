@@ -122,3 +122,16 @@ describe("Berlin Clock - Simple Hours Line", function () {
   
 });
 
+describe("Berlin Clock - Five Hours Line", function() {
+
+    it("should have no lamps lit for 0 hours", function() {
+
+        const result = main.fiveHoursLine(0);
+
+        expect(result).toEqual("OOOO");
+        
+    });
+});
+
+
+
