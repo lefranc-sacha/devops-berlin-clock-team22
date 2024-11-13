@@ -185,6 +185,13 @@ describe("Berlin Clock - Seconds Lamp", function () {
         expect(result).toEqual("Y");
     });
 
+    it("should be off (O) for 3 seconds", function () {
+
+        const result = main.secondsLamp(3);
+
+        expect(result).toEqual("O");
+    });
+
 
 });
 
