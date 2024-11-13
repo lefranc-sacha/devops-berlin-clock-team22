@@ -50,4 +50,11 @@ export class Main{
         this.simpleMinutesLine(minutes)
       ].join("\n");
     }
+    
 }
+const clock = new Main();
+const hours = 9;
+const minutes = 32;
+const seconds = 15;
+
+console.log(clock.berlinClock(hours, minutes, seconds));
