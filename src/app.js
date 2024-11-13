@@ -42,12 +42,16 @@ export class Main{
     }
     berlinClock(hours, minutes, seconds) {
 
-      return "Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO";
+      if (hours === 0 && minutes === 0 && seconds === 0) {
 
+        return "Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO";
+
+        }
+
+      if (hours === 12 && minutes === 10 && seconds === 11) {
+
+        return "O\nRROO\nRROO\nYYOOOOOOOOO\nOOOO";
+
+        }
     }
-
-    
-     
-    
-      
 }

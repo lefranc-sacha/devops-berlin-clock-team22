@@ -202,6 +202,14 @@ describe("Berlin Clock - Full Clock", function() {
 
       expect(result).toEqual("Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO");
     });
+
+    it("should display 12:10:11", function() {
+
+        const result = main.berlinClock(12, 10, 11);
+
+        expect(result).toEqual("O\nRROO\nRROO\nYYOOOOOOOOO\nOOOO");
+        
+      });
   });
 
 
