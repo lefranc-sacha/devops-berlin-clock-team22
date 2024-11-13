@@ -194,6 +194,15 @@ describe("Berlin Clock - Seconds Lamp", function () {
 
 
 });
+describe("Berlin Clock - Full Clock", function() {
+
+      it("should display midnight (00:00:00)", function() {
+
+      const result = main.berlinClock(0, 0, 0);
+
+      expect(result).toEqual("Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO");
+    });
+  });
 
 
 
