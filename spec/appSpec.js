@@ -208,7 +208,13 @@ describe("Berlin Clock - Full Clock", function() {
         const result = main.berlinClock(12, 10, 11);
 
         expect(result).toEqual("O\nRROO\nRROO\nYYOOOOOOOOO\nOOOO");
+
+      });
+      it("should display 23:59:59", function() {
+
+        const result = main.berlinClock(23, 59, 59);
         
+        expect(result).toEqual("O\nRRRR\nRRRO\nYYRYYRYYRYY\nYYYY");
       });
   });
 
