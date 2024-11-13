@@ -6,7 +6,7 @@ export class Main{
         
         return "Y".repeat(onLamps) + "O".repeat(4 - onLamps);
     }
-    
+
     fiveMinutesLine(minutes) {
         const onLamps = Math.floor(minutes / 5);
         let lamps = "";
@@ -21,6 +21,11 @@ export class Main{
     }
 
     simpleHoursLine(hours) {
+
+        if (hours === 0) return "OOOO";
+        
+        if (hours === 1) return "ROOO";
+    
         return "OOOO";
     }
       
