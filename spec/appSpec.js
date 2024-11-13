@@ -1,7 +1,9 @@
 import { Main } from '../src/app.js';
 
+const main = new Main();
+
 describe("Berlin Clock - Simple Minutes Line , ", function() {
-    const main = new Main();
+ 
 
     it("should turn off all lamps if minutes are 0", function () {
 
@@ -45,7 +47,7 @@ describe("Berlin Clock - Simple Minutes Line , ", function() {
         expect(main.simpleMinutesLine(8)).toEqual("YYYO"); 
         expect(main.simpleMinutesLine(9)).toEqual("YYYY"); 
     });
-
+});
 describe("Five Minutes Line", function () {
 
     it("should turn off all lamps when minutes are 0", function () {
@@ -68,7 +70,7 @@ describe("Five Minutes Line", function () {
         
         expect(result).toEqual("YYRYYROOOOO");
       });
-      
+
     it("should light up all lamps correctly for 55 minutes", function() {
         
         const result= main.fiveMinutesLine(55);
@@ -76,6 +78,5 @@ describe("Five Minutes Line", function () {
         expect(result).toEqual("YYRYYRYYRYY");
       });
 
-    });
-
 });
+
