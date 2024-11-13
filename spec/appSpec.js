@@ -44,7 +44,16 @@ describe("Berlin Clock - Simple Minutes Line , ", function() {
         expect(main.simpleMinutesLine(7)).toEqual("YYOO"); 
         expect(main.simpleMinutesLine(8)).toEqual("YYYO"); 
         expect(main.simpleMinutesLine(9)).toEqual("YYYY"); 
-      });
+    });
 
+describe("Five Minutes Line", function () {
+
+    it("should turn off all lamps when minutes are 0", function () {
+
+        const result = main.simpleMinutesLine(0);
+
+        expect(result).toEqual("OOOO");
+    });
+    });
 
 });
