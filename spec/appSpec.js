@@ -50,9 +50,16 @@ describe("Five Minutes Line", function () {
 
     it("should turn off all lamps when minutes are 0", function () {
 
-        const result = main.simpleMinutesLine(0);
+        const result = main.fiveMinutesLine(0);
 
-        expect(result).toEqual("OOOO");
+        expect(result).toEqual("OOOOOOOOOOO");
+    });
+
+    it("should turn off all lamps when minutes are 5", function () {
+
+        const result = main.fiveMinutesLine(5);
+
+        expect(result).toEqual("YOOOOOOOOOO");
     });
     });
 
