@@ -30,6 +30,14 @@ describe("Berlin Clock - Simple Minutes Line , ", function() {
 
         expect(result).toEqual("YYYO");
     });
+    
+    it("should turn on four lights if the minutes are 4", function () {
+
+        const result = main.simpleMinutesLine(4);
+
+        expect(result).toEqual("YYYY");
+    });
+
     it("should work the same for minutes greater than 4", function () {
         expect(main.simpleMinutesLine(5)).toEqual("OOOO"); 
         expect(main.simpleMinutesLine(6)).toEqual("YOOO"); 
@@ -37,5 +45,6 @@ describe("Berlin Clock - Simple Minutes Line , ", function() {
         expect(main.simpleMinutesLine(8)).toEqual("YYYO"); 
         expect(main.simpleMinutesLine(9)).toEqual("YYYY"); 
       });
+
 
 });
