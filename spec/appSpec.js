@@ -99,8 +99,16 @@ describe("Berlin Clock - Simple Hours Line", function () {
     it("should turn on two lamps for 2 hours", function() {
 
         const result = main.simpleHoursLine(2);
-        
+
         expect(result).toEqual("RROO");
+
+    });
+
+    it("should turn on three lamps for 3 hours", function() {
+        
+        const result = main.simpleHoursLine(3);
+        
+        expect(result).toEqual("RRRO");
 
     });
   
