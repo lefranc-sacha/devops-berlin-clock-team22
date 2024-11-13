@@ -35,5 +35,6 @@ export class Main{
         return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
         
     }
+   
       
 }
