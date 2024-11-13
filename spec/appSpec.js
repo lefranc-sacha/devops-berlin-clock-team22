@@ -80,3 +80,13 @@ describe("Five Minutes Line", function () {
 
 });
 
+describe("Berlin Clock - Simple Hours Line", function () {
+
+    it("should turn off all lamps for 0 hours", function () {
+        
+      const result = main.simpleHoursLine(0);
+
+      expect(result).toEqual("OOOO");
+    });
+});
+
