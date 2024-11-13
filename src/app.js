@@ -22,17 +22,10 @@ export class Main{
 
     simpleHoursLine(hours) {
 
-        if (hours === 0) return "OOOO";
+        const onLamps = hours % 5;
         
-        if (hours === 1) return "ROOO";
+        return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
 
-        if (hours === 2) return "RROO";
-
-        if (hours === 3) return "RRRO";
-
-        if (hours === 4) return "RRRR";
-    
-        return "OOOO";
     }
       
 }
