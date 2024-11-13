@@ -138,6 +138,13 @@ describe("Berlin Clock - Five Hours Line", function() {
         expect(result).toEqual("ROOO");
 
     });
+    it("should have two red lamps lit for 10 hours", function() {
+
+        const result = main.fiveHoursLine(10);
+
+      expect(result).toEqual("RROO");
+      
+    });
 });
 
 
