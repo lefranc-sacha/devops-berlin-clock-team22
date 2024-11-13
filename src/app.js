@@ -36,6 +36,9 @@ export class Main{
         
     }
     secondsLamp(seconds) {
+        
+        if(seconds === 1) return "O";
+
         return "Y"; 
       }
      
