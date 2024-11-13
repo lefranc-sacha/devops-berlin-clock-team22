@@ -92,7 +92,7 @@ describe("Berlin Clock - Simple Hours Line", function () {
     it("should turn on one lamp for 1 hour", function() {
         
         const result = main.simpleHoursLine(1);
-        
+
         expect(result).toEqual("ROOO");
     });
 
@@ -158,7 +158,20 @@ describe("Berlin Clock - Five Hours Line", function() {
         
         expect(result).toEqual("RRRR");
     });
+
+    
 });
+
+describe("Berlin Clock - Seconds Lamp", function () {
+
+    it("should be on (Y) for even seconds", function () {
+
+      const result = main.secondsLamp(0);  
+      
+      expect(result).toEqual("Y");
+    });
+});
+
 
 
 
